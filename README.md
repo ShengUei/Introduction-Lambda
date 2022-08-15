@@ -5,6 +5,17 @@ Lambda 使用條件:
 1. 必須有 interface
 2. 該 interface 只能有一個方法
 
+Lambda 語法:
+input -> body
+ex :
+  1. () -> System.out.println("run me!");
+  2. (String s) ->  System.out.println(s);
+  3. (x, y) -> return x + y
+  4. (int x, int y) -> {
+                        x++;
+                        y--;
+                        return x + y }
+
 - Scenario 1:
   - 簡單介紹繼承
 - Scenario 2:
