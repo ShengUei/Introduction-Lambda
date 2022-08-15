@@ -1,0 +1,10 @@
+public class Fish extends Animal {
+
+    public Fish() {
+    }
+
+    public Fish(String name, int age) {
+        super(name, age);
+    }
+    
+}
