@@ -13,9 +13,9 @@ ex :
   2. (String s) ->  System.out.println(s);
   3. (x, y) -> return x + y
   4. (int x, int y) -> {
-                        x++;
-                        y--;
-                        return x + y 
+                          x++;
+                          y += 8;
+                          return x + y 
                         }
 ```
 
