@@ -32,3 +32,77 @@ public class Animal {
     
 }
 ```
+
+```java
+public interface Callable {
+
+    void call();
+    
+}
+```
+
+```java
+public class Dog extends Animal implements Callable {
+
+    public Dog() {
+    }
+
+    public Dog(String name, int age) {
+        super(name, age);
+    }
+
+    @Override
+    public void call() {
+        System.out.println("woof woof");
+    }
+    
+}
+```
+
+```java
+public class Cat extends Animal implements Callable {
+
+    public Cat() {
+    }
+
+    public Cat(String name, int age) {
+        super(name, age);
+    }
+
+    @Override
+    public void call() {
+        System.out.println("meow meow");
+    }
+    
+}
+```
+
+```java
+public class Fish extends Animal {
+
+    public Fish() {
+    }
+
+    public Fish(String name, int age) {
+        super(name, age);
+    }
+    
+}
+```
+
+```java
+public class Human extends Animal {
+
+    public Human() {
+    }
+
+    public Human(String name, int age) {
+        super(name, age);
+    }
+
+    public void speak(Callable callable) {
+        callable.call();
+    }
+    
+}
+```
