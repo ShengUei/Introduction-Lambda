@@ -13,4 +13,6 @@ Lambda 使用條件:
   - 利用介面當參數，並透過匿名函式來實作介面中的方法
 - Scenario 4:
   - 利用 Lambda 來實作介面中的方法
+- Scenario 5:
+  - 介紹 Stream api
 
