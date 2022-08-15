@@ -1,5 +1,9 @@
 # Introduction Lambda
-利用範例來介紹Lambda
+利用範例來介紹 Lambda
+
+Lambda 使用條件:
+1. 必須有 interface
+2. 該 interface 只能有一個方法
 
 - Scenario 1:
   - 簡單介紹繼承
