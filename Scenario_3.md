@@ -40,3 +40,28 @@ public class Human extends Animal {
 }
 ```
 在 speak() 方法中，放入 Callable 介面來當參數，在呼叫 Callable 的 call() 方法
+
+這之後，我們可以使用匿名函式的方式來實作 Callable 的 call() 方法
+```java
+public class Main {
+    public static void main(String[] args) {
+        Human peter = new Human();
+
+        peter.speak(new Callable() {
+            @Override
+            public void call() {
+                System.out.println("My name is peter.");
+            }
+        });
+
+        Human amy = new Human();
+
+        amy.speak(new Callable() {
+            @Override
+            public void call() {
+                System.out.println("Hello World.");
+            }
+        });
+    }
+}
+```
