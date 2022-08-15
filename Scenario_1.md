@@ -61,7 +61,7 @@ public class Dog extends Animal {
 ```
 
 建立 Cat 類別
-'''java
+```java
 public class Cat extends Animal {
 
     public Cat() {
@@ -77,4 +77,4 @@ public class Cat extends Animal {
     }
     
 }
-'''
+```
