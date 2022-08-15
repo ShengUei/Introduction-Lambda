@@ -8,13 +8,16 @@ Lambda 使用條件:
 Lambda 語法:
 input -> body
 ex :
+```java
   1. () -> System.out.println("run me!");
   2. (String s) ->  System.out.println(s);
   3. (x, y) -> return x + y
   4. (int x, int y) -> {
                         x++;
                         y--;
-                        return x + y }
+                        return x + y 
+                        }
+```
 
 - Scenario 1:
   - 簡單介紹繼承
