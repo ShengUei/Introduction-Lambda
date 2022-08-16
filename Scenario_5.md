@@ -13,7 +13,7 @@ Stream 分成了兩種 Operator
 ![Stream diagram](https://s29840.pcdn.co/wp-content/uploads/2020/06/238.Java-streams.jpg)
 
 
-- forEach():
+- forEach() 將進行依序取出 :
 
 ```java
 List<Integer> numberList = Arrays.asList(6, 77, 46, 2, 10, 66, 5);
@@ -27,7 +27,7 @@ output:
 6, 77, 46, 2, 10, 66, 5
 ```
 
-- filter():
+- filter() 在 intermediate 階段，將 Stream 中的資料進行條件篩選 :
 
 ```java
 List<Integer> numberList = Arrays.asList(6, 77, 46, 2, 10, 66, 5);
@@ -42,7 +42,7 @@ output:
 6, 2, 10, 5
 ```
 
-- sorted():
+- sorted() 在 intermediate 階段，將 Stream 中的資料進行排序 :
 
 ```java
 List<Integer> numberList = Arrays.asList(6, 77, 46, 2, 10, 66, 5);
@@ -58,8 +58,8 @@ output:
 2, 5, 6, 10
 ```
 
-- map():
-在 intermediate 階段，將 Stream 中的資料進行操作
+- map() 在 intermediate 階段，將 Stream 中的資料進行操作 :
+
 ```java
 List<Integer> numberList = Arrays.asList(6, 77, 46, 2, 10, 66, 5);
 
