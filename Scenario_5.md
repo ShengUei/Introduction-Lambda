@@ -42,7 +42,6 @@ output:
 6, 2, 10, 5
 ```
 
-
 - sorted():
 
 ```java
@@ -57,4 +56,19 @@ numberList.stream()
 output:
 ```java
 2, 5, 6, 10
+```
+
+- map():
+在 intermediate 階段，將 Stream 中的資料進行操作
+```java
+List<Integer> numberList = Arrays.asList(6, 77, 46, 2, 10, 66, 5);
+
+numberList.stream()
+           .map(x -> x * x)
+           .forEach(System.out::print);
+```
+
+output:
+```java
+36, 5929, 2116, 4, 100, 4356, 25
 ```
