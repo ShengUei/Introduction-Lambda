@@ -41,3 +41,20 @@ output:
 ```java
 6, 2, 10, 5
 ```
+
+
+- sorted():
+
+```java
+List<Integer> numberList = Arrays.asList(6, 77, 46, 2, 10, 66, 5);
+
+numberList.stream()
+           .sorted()
+           .filter(x -> x <= 10)
+           .forEach(System.out::print);
+```
+
+output:
+```java
+2, 5, 6, 10
+```
