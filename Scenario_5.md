@@ -19,5 +19,10 @@ Stream 分成了兩種 Operator
 List<Integer> numberList = Arrays.asList(6, 77, 46, 2, 10, 66, 5);
 
 numberList.stream()
-           .forEach(System.out::println);
+           .forEach(System.out::print);
+```
+
+output:
+```java
+6, 77, 46, 2, 10, 66, 5
 ```
