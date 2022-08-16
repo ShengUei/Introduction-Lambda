@@ -72,3 +72,20 @@ output:
 ```java
 36, 5929, 2116, 4, 100, 4356, 25
 ```
+
+- reduce() :
+
+```java
+List<Integer> numberList = Arrays.asList(6, 77, 46, 2, 10, 66, 5);
+
+numberList.stream()
+           .filter(i -> i < 10)
+           .reduce(0, (tempSum, i) -> tempSum + i);
+           
+System.out.println(sum);
+```
+
+output:
+```java
+13
+```
