@@ -73,7 +73,7 @@ output:
 36, 5929, 2116, 4, 100, 4356, 25
 ```
 
-- reduce() :
+- reduce() 將進行依序取出，並與前一筆資料進行處裡，最後輸出一個結果 :
 
 ```java
 List<Integer> numberList = Arrays.asList(6, 77, 46, 2, 10, 66, 5);
