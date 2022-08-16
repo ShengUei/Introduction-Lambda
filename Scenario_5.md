@@ -13,7 +13,7 @@ Stream 分成了兩種 Operator
 ![Stream diagram](https://s29840.pcdn.co/wp-content/uploads/2020/06/238.Java-streams.jpg)
 
 
-- example 1:
+- forEach():
 
 ```java
 List<Integer> numberList = Arrays.asList(6, 77, 46, 2, 10, 66, 5);
@@ -25,4 +25,19 @@ numberList.stream()
 output:
 ```java
 6, 77, 46, 2, 10, 66, 5
+```
+
+- filter():
+
+```java
+List<Integer> numberList = Arrays.asList(6, 77, 46, 2, 10, 66, 5);
+
+numberList.stream()
+           .filter(x -> x <= 10)
+           .forEach(System.out::print);
+```
+
+output:
+```java
+6, 2, 10, 5
 ```
