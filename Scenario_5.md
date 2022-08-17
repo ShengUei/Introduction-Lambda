@@ -116,3 +116,33 @@ output:
 66 : 4356
 77 : 5929
 ```
+
+- map 轉成 list
+
+```java
+
+List<Integer> numberList = Arrays.asList(6, 77, 46, 2, 10, 66, 5);
+
+
+Map<Integer, Integer> numberMap = numberList.stream()
+                                             .sorted()
+                                             .collect(Collectors.toMap(x -> x, x -> x * x));
+                                             
+List<Integer> mapToList = numberMap.values().stream()
+                                            .sorted()
+                                            .collect(Collectors.toList());
+        
+mapToList.stream()
+         .forEach(x -> System.out.println("map value: " + x));
+```
+
+output:
+```java
+map value: 4
+map value: 25
+map value: 36
+map value: 100
+map value: 2116
+map value: 4356
+map value: 5929
+```
