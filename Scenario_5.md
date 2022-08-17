@@ -89,3 +89,30 @@ output:
 ```java
 13
 ```
+
+- list 轉成 map
+
+```java
+List<Integer> numberList = Arrays.asList(6, 77, 46, 2, 10, 66, 5);
+
+
+Map<Integer, Integer> numberMap = numberList.stream()
+                                             .sorted()
+                                             .collect(Collectors.toMap(x -> x, x -> x * x));
+                                             
+
+numberMap.keySet().stream()
+                  .sorted()
+                  .forEach(k -> System.out.println(k + " : " + numberMap.get(k)));                                             
+```
+
+output:
+```java
+2 : 4
+5 : 25
+6 : 36
+10 : 100
+46 : 2116
+66 : 4356
+77 : 5929
+```
